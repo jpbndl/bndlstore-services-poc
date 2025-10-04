@@ -1,0 +1,36 @@
+# .NET build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# OS generated files
+*.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+
+# Test results
+TestResults/
+
+# Docker
+*.dockerignore
+Dockerfile
+
+# Others
+.env
+/.vs
