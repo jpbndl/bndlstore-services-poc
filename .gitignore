@@ -27,10 +27,6 @@ Thumbs.db
 # Test results
 TestResults/
 
-# Docker
-*.dockerignore
-Dockerfile
-
 # Others
 .env
 /.vs
