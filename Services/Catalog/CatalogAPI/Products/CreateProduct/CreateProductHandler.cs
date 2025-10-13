@@ -15,9 +15,9 @@
                 ImageFile = command.ImageFile,
                 Price = command.Price
             };
+
             session.Store(product);
             await session.SaveChangesAsync(cancellationToken);
-
             return new CreateProducResult(Guid.NewGuid());
         }
     }
