@@ -2,12 +2,21 @@ services:
   catalogdb:
     image: postgres
   basketdb:
-    image: postgres  
+    image: postgres
+  distributedcache:
+    image: redis
+    
   catalogapi:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
       dockerfile: Services/Catalog/CatalogAPI/Dockerfile
+
+  basketapi:
+    image: ${DOCKER_REGISTRY-}basketapi
+    build:
+      context: .
+      dockerfile: Services/Basket/BasketAPI/Dockerfile
 
 volumes:
   postgres_catalog:
