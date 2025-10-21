@@ -18,12 +18,11 @@
             await session.SaveChangesAsync(cancellationToken);
             return basket;
         }
-        public async  Task<bool> DeleteBasket(string userName, CancellationToken cancellationToken)
+        public async Task<bool> DeleteBasket(string userName, CancellationToken cancellationToken)
         {
             session.Delete<ShoppingCart>(userName);
             await session.SaveChangesAsync(cancellationToken);
             return true;
         }
-
     }
 }
